@@ -6,18 +6,12 @@ import Map from "./Orders/Map/Map";
 import List from "./Orders/List/List";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <div>
+  <StrictMode className="min-h-screen flex flex-col bg">
       <Header />
-    </div>
-    <div>
-      <Form />
-    </div>
-    <div>
+      < className="flex-1 w-full max-w-md mx-auto px-5 py-6">
+        <Form />
       <Map />
-    </div>
-    <div>
       <List />
-    </div>
+      </main>
   </StrictMode>,
 );
